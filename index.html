@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruralidad territorial en Chile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <!-- ✏️ EDITAR: Título y subtítulo del mapa -->
+      <h1>Ruralidad y transición territorial<br>en Chile</h1>
+      <p class="subtitle">
+        Mapa bivariado: variable A y variable B por región.
+      </p>
+    </header>
+
+    <div class="main-area">
+      <aside class="sidebar">
+        <div id="legend"></div>
+
+        <div class="how-to-read">
+          <span class="how-title">Cómo leer este mapa</span>
+          <p>Cada región combina <strong>dos dimensiones</strong>:</p>
+
+          <!-- ✏️ EDITAR: Descripción de las dimensiones según tu dataset -->
+          <p class="how-dimension"><strong>El color</strong> — ¿en qué dirección varía la variable B?</p>
+          <p><span class="hl-teal">&block;</span> Teal → la variable B <strong>disminuye</strong></p>
+          <p><span class="hl-accent">&block;</span> Magenta → la variable B <strong>aumenta</strong></p>
+          <p><span class="hl-muted">&block;</span> Lila → la variación es <strong>leve o cercana a cero</strong></p>
+
+          <p class="how-dimension"><strong>La intensidad</strong> — ¿qué tan alto es el nivel de la variable A?</p>
+          <p>Más claro = menor nivel</p>
+          <p>Más oscuro = mayor nivel</p>
+
+          <p class="how-example">
+            Ejemplo: <span class="hl-teal-dark">teal oscuro</span> = una región con nivel alto de A, pero con mejora reciente en B.
+          </p>
+          <p class="how-hover">Pasa el cursor sobre una región para ver sus valores exactos.</p>
+        </div>
+
+        <p id="insight" class="insight"></p>
+      </aside>
+
+      <div class="map-wrapper">
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <footer class="sources">
+      <span id="meta" class="meta-inline"></span>
+      <span class="sep">&middot;</span>
+
+      <!-- ✏️ EDITAR: Fuentes de datos -->
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        Fuente de datos: [completar]
+      </a>
+
+      <span class="sep">&middot;</span>
+
+      <a href="https://www.geoboundaries.org/" target="_blank" rel="noopener noreferrer">
+        Base geográfica: geoBoundaries ADM1 Chile
+      </a>
+
+      <span class="sep">&middot;</span>
+      Visualización bivariada con D3.js y TopoJSON
+
+      <span class="credit">
+        Autor:
+        <a href="https://www.linkedin.com/in/sanmabruno/" target="_blank" rel="noopener noreferrer">
+          Bruno San Martín Navarro
+        </a>
+      </span>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
