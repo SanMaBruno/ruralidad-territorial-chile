@@ -1,123 +1,80 @@
 /**
- * tooltip.js — Tooltip genérico para mapa bivariado Chile
+ * tooltip.js — Tooltip enriquecido para mapa de ruralidad Chile
  *
- * Configurable via initTooltip(). Muestra nombre de región,
- * dos variables principales y opcionalmente una tercera (significancia, etc).
+ * Muestra nombre de región, breakdown rural/urbano con barra visual,
+ * y las primeras comunas rurales de la región.
  */
+
+import { colorScale } from "./choropleth.js";
 
 let tooltipEl = null;
 
-let tooltipConfig = {
-  keyA: "x",
-  keyB: "y",
-  keySig: null,               // ✏️ clave para tercera fila (ej: significancia). null = no mostrar
-  labelA: "Variable A",       // ✏️ etiqueta eje X
-  labelB: "Variable B",       // ✏️ etiqueta eje Y
-  labelSig: "Significancia",  // ✏️ etiqueta tercera fila
-  nameKey: "name",
-  unitA: "%",                 // ✏️ "%" | "pp" | "" etc.
-  unitB: "pp"                 // ✏️ unidad de la variable B
-};
-
-function formatearNumero(valor, decimales = 1) {
-  const n = Number(valor);
-  if (!Number.isFinite(n)) return "Sin dato";
-  return new Intl.NumberFormat("es-CL", {
-    minimumFractionDigits: decimales,
-    maximumFractionDigits: decimales
-  }).format(n);
-}
-
-function formatearConUnidad(valor, unidad) {
-  const n = Number(valor);
-  if (!Number.isFinite(n)) return "Sin dato";
-
-  const texto = formatearNumero(Math.abs(n), 1);
-
-  if (unidad === "%") return `${formatearNumero(n, 1)} %`;
-
-  if (unidad === "pp") {
-    if (n > 0) return `+${texto} pp`;
-    if (n < 0) return `-${texto} pp`;
-    return `0,0 pp`;
-  }
-
-  // default: signo + valor + unidad
-  const signo = n > 0 ? "+" : "";
-  return `${signo}${formatearNumero(n, 1)}${unidad ? " " + unidad : ""}`;
-}
-
-function formatearSignificancia(valor) {
-  const v = String(valor ?? "").trim().toLowerCase();
-
-  if (["si", "sí", "significativa", "true", "1"].includes(v)) {
-    return "Significativa";
-  }
-
-  if (["no", "no significativa", "false", "0"].includes(v)) {
-    return "No significativa";
-  }
-
-  return "Sin dato";
-}
-
-export function initTooltip(config = {}) {
-  tooltipConfig = { ...tooltipConfig, ...config };
-
+export function initTooltip() {
   if (!tooltipEl) {
     tooltipEl = document.createElement("div");
     tooltipEl.className = "tooltip";
-    tooltipEl.style.position = "fixed";
-    tooltipEl.style.pointerEvents = "none";
-    tooltipEl.style.opacity = "0";
-    tooltipEl.style.zIndex = "9999";
     document.body.appendChild(tooltipEl);
   }
 }
 
-export function showTooltip(event, datum) {
+export function showTooltip(event, datum, comunasInfo) {
   if (!tooltipEl) return;
 
-  const regionName =
-    datum?.[tooltipConfig.nameKey] ||
-    datum?.name ||
-    datum?.nombre ||
-    "Región sin nombre";
+  const name      = datum.name || "Región";
+  const nRural    = datum.comunas_rurales;
+  const nMixta    = datum.comunas_mixtas || 0;
+  const nTotal    = datum.comunas_totales;
+  const nUrban    = nTotal - nRural - nMixta;
+  const pct       = datum.pct_rural;
+  const color     = colorScale(pct);
+  const comunasR  = comunasInfo?.comunas_rurales || [];
+  const comunasM  = comunasInfo?.comunas_mixtas || [];
+  const previewR  = comunasR.slice(0, 3);
+  const previewM  = comunasM.slice(0, 3);
+  const remainR   = comunasR.length - previewR.length;
+  const remainM   = comunasM.length - previewM.length;
 
-  const valorA = formatearConUnidad(datum?.[tooltipConfig.keyA], tooltipConfig.unitA);
-  const valorB = formatearConUnidad(datum?.[tooltipConfig.keyB], tooltipConfig.unitB);
+  const ruralList = previewR.map(c =>
+    `<span class="tt-comuna">${c}</span>`
+  ).join("") + (remainR > 0 ? `<span class="tt-more">+${remainR} más</span>` : "");
 
-  let sigRow = "";
-  if (tooltipConfig.keySig && datum?.[tooltipConfig.keySig] != null) {
-    const valorSig = formatearSignificancia(datum[tooltipConfig.keySig]);
-    sigRow = `
-      <div class="tooltip-row">
-        <span>${tooltipConfig.labelSig}</span>
-        <strong>${valorSig}</strong>
-      </div>`;
-  }
+  const mixtaList = previewM.map(c =>
+    `<span class="tt-comuna tt-mixta">${c}</span>`
+  ).join("") + (remainM > 0 ? `<span class="tt-more">+${remainM} más</span>` : "");
 
   tooltipEl.innerHTML = `
     <div class="tooltip-card">
-      <div class="tooltip-title">${regionName}</div>
-
-      <div class="tooltip-row">
-        <span>${tooltipConfig.labelA}</span>
-        <strong>${valorA}</strong>
+      <div class="tooltip-title">${name}</div>
+      <div class="tt-bar-wrap">
+        <div class="tt-bar-fill" style="width:${pct}%;background:${color}"></div>
       </div>
-
       <div class="tooltip-row">
-        <span>${tooltipConfig.labelB}</span>
-        <strong class="${Number(datum?.[tooltipConfig.keyB]) <= 0 ? "tooltip-good" : "tooltip-bad"}">${valorB}</strong>
+        <span>Comunas rurales</span>
+        <strong>${nRural}</strong>
       </div>
-
-      ${sigRow}
+      <div class="tooltip-row">
+        <span>Comunas mixtas</span>
+        <strong>${nMixta}</strong>
+      </div>
+      <div class="tooltip-row">
+        <span>Comunas urbanas</span>
+        <strong>${nUrban}</strong>
+      </div>
+      <div class="tooltip-row">
+        <span>Ruralidad</span>
+        <strong>${pct}%</strong>
+      </div>
+      ${comunasR.length ? `<div class="tt-comunas">${ruralList}</div>` : ""}
+      ${comunasM.length ? `<div class="tt-comunas">${mixtaList}</div>` : ""}
+      <div class="tt-hint">Clic para ver todas las comunas</div>
     </div>
   `;
 
-  const offset = 16;
-  tooltipEl.style.left = `${event.clientX + offset}px`;
-  tooltipEl.style.top = `${event.clientY + offset}px`;
+  const offset = 14;
+  const x = event.clientX + offset;
+  const y = event.clientY + offset;
+  tooltipEl.style.left = `${x}px`;
+  tooltipEl.style.top  = `${y}px`;
   tooltipEl.style.opacity = "1";
 }
 

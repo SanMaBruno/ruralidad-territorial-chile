@@ -3,73 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ruralidad territorial en Chile</title>
+  <title>Radiografía de la Ruralidad en Chile · CENSO 2024</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="container">
+
+    <!-- ── Header ── -->
     <header>
-      <!-- ✏️ EDITAR: Título y subtítulo del mapa -->
-      <h1>Ruralidad y transición territorial<br>en Chile</h1>
+      <h1>Radiografía de la ruralidad<br>territorial en Chile</h1>
       <p class="subtitle">
-        Mapa bivariado: variable A y variable B por región.
+        346 comunas en 16 regiones: 185 rurales · 76 mixtas · 85 urbanas · Fuente: CENSO 2024 — Mapa Chile Rural
       </p>
     </header>
 
+    <!-- ── Hero counters ── -->
+    <div class="counters">
+      <div class="counter-card">
+        <span class="counter-value" id="cnt-rural">0</span>
+        <span class="counter-label">Comunas rurales</span>
+      </div>
+      <div class="counter-card">
+        <span class="counter-value" id="cnt-mixta">0</span>
+        <span class="counter-label">Comunas mixtas</span>
+      </div>
+      <div class="counter-card">
+        <span class="counter-value" id="cnt-urban">0</span>
+        <span class="counter-label">Comunas urbanas</span>
+      </div>
+      <div class="counter-card">
+        <span class="counter-value" id="cnt-total">0</span>
+        <span class="counter-label">Total comunas</span>
+      </div>
+      <div class="counter-card accent">
+        <span class="counter-value" id="cnt-pct">0%</span>
+        <span class="counter-label">Ruralidad nacional</span>
+      </div>
+    </div>
+
+    <!-- ── Main area ── -->
     <div class="main-area">
+
+      <!-- Sidebar -->
       <aside class="sidebar">
         <div id="legend"></div>
 
         <div class="how-to-read">
           <span class="how-title">Cómo leer este mapa</span>
-          <p>Cada región combina <strong>dos dimensiones</strong>:</p>
-
-          <!-- ✏️ EDITAR: Descripción de las dimensiones según tu dataset -->
-          <p class="how-dimension"><strong>El color</strong> — ¿en qué dirección varía la variable B?</p>
-          <p><span class="hl-teal">&block;</span> Teal → la variable B <strong>disminuye</strong></p>
-          <p><span class="hl-accent">&block;</span> Magenta → la variable B <strong>aumenta</strong></p>
-          <p><span class="hl-muted">&block;</span> Lila → la variación es <strong>leve o cercana a cero</strong></p>
-
-          <p class="how-dimension"><strong>La intensidad</strong> — ¿qué tan alto es el nivel de la variable A?</p>
-          <p>Más claro = menor nivel</p>
-          <p>Más oscuro = mayor nivel</p>
-
-          <p class="how-example">
-            Ejemplo: <span class="hl-teal-dark">teal oscuro</span> = una región con nivel alto de A, pero con mejora reciente en B.
-          </p>
-          <p class="how-hover">Pasa el cursor sobre una región para ver sus valores exactos.</p>
+          <p><strong>El color del mapa</strong> indica el porcentaje de comunas rurales y mixtas en cada región.</p>
+          <p><span class="hl-box" style="background:#c6be8e"></span> Claro → baja ruralidad</p>
+          <p><span class="hl-box" style="background:#8aab7a"></span> Medio → presencia mixta</p>
+          <p><span class="hl-box" style="background:#1a5c3a"></span> Oscuro → alta ruralidad</p>
+          <p class="how-categories">Cada comuna se clasifica como <strong>rural</strong>, <strong>mixta</strong> o <strong>urbana</strong> según el Censo 2024.</p>
+          <p class="how-hover">Haz <strong>clic</strong> en una región para explorar sus comunas.</p>
         </div>
+
+        <p class="section-title">Regiones por ruralidad</p>
+        <div id="region-list" class="region-list"></div>
 
         <p id="insight" class="insight"></p>
       </aside>
 
+      <!-- Map -->
       <div class="map-wrapper">
         <div id="map"></div>
       </div>
+
+      <!-- Detail panel (hidden by default) -->
+      <div id="detail-panel" class="detail-panel">
+        <button id="panel-close" class="panel-close" aria-label="Cerrar">✕</button>
+        <h2 id="panel-region" class="panel-region"></h2>
+        <p id="panel-subtitle" class="panel-subtitle"></p>
+
+        <div class="panel-bar-wrap">
+          <div class="panel-bar">
+            <div id="bar-rural" class="bar-rural"></div>
+            <div id="bar-urban" class="bar-urban"></div>
+          </div>
+          <div class="panel-bar-labels">
+            <span id="bar-label-rural"></span>
+            <span id="bar-label-urban"></span>
+          </div>
+        </div>
+
+        <p class="panel-section-title">Comunas rurales y mixtas</p>
+        <ul id="panel-comunas" class="panel-comunas"></ul>
+        <p id="panel-urban-note" class="panel-urban-note"></p>
+      </div>
+
     </div>
 
+    <!-- Footer -->
     <footer class="sources">
       <span id="meta" class="meta-inline"></span>
       <span class="sep">&middot;</span>
-
-      <!-- ✏️ EDITAR: Fuentes de datos -->
       <a href="#" target="_blank" rel="noopener noreferrer">
-        Fuente de datos: [completar]
+        Fuente: CENSO 2024 — Mapa Chile Rural
       </a>
-
       <span class="sep">&middot;</span>
-
       <a href="https://www.geoboundaries.org/" target="_blank" rel="noopener noreferrer">
         Base geográfica: geoBoundaries ADM1 Chile
       </a>
-
       <span class="sep">&middot;</span>
-      Visualización bivariada con D3.js y TopoJSON
-
+      D3.js + TopoJSON
       <span class="credit">
         Autor:
         <a href="https://www.linkedin.com/in/sanmabruno/" target="_blank" rel="noopener noreferrer">
@@ -77,6 +117,7 @@
         </a>
       </span>
     </footer>
+
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>

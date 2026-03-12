@@ -1,17 +1,262 @@
-shapeID,name,x,y
-47653553B40993810137393,Antofagasta,0,0
-47653553B1207481020383,Arica y Parinacota,0,0
-47653553B71653813080592,Atacama,0,0
-47653553B77266651052380,Aysén,0,0
-47653553B91907313612474,Coquimbo,0,0
-47653553B84299910343297,La Araucanía,0,0
-47653553B69224850096491,Los Lagos,0,0
-47653553B67595840047202,Los Ríos,0,0
-47653553B86325292267162,Magallanes,0,0
-47653553B32293817275864,Ñuble,0,0
-47653553B97418467345315,Tarapacá,0,0
-47653553B5611469222723,Valparaíso,0,0
-47653553B66835736668351,Biobío,0,0
-47653553B66141875659978,O'Higgins,0,0
-47653553B65340542415201,Maule,0,0
-47653553B78904739401519,Metropolitana,0,0
+numero_mapa,pais,region,comuna,tipologia,anio_fuente,fuente
+1,Chile,Región de Arica y Parinacota,General Lagos,Rural,2024,CENSO 2024 - Mapa Chile Rural
+2,Chile,Región de Arica y Parinacota,Putre,Rural,2024,CENSO 2024 - Mapa Chile Rural
+3,Chile,Región de Arica y Parinacota,Camarones,Rural,2024,CENSO 2024 - Mapa Chile Rural
+4,Chile,Región de Tarapacá,Camiña,Rural,2024,CENSO 2024 - Mapa Chile Rural
+5,Chile,Región de Tarapacá,Colchane,Rural,2024,CENSO 2024 - Mapa Chile Rural
+6,Chile,Región de Tarapacá,Huara,Rural,2024,CENSO 2024 - Mapa Chile Rural
+7,Chile,Región de Tarapacá,Pica,Rural,2024,CENSO 2024 - Mapa Chile Rural
+8,Chile,Región de Tarapacá,Pozo Almonte,Rural,2024,CENSO 2024 - Mapa Chile Rural
+9,Chile,Región de Antofagasta,Ollagüe,Rural,2024,CENSO 2024 - Mapa Chile Rural
+10,Chile,Región de Antofagasta,María Elena,Rural,2024,CENSO 2024 - Mapa Chile Rural
+11,Chile,Región de Antofagasta,Tocopilla,Rural,2024,CENSO 2024 - Mapa Chile Rural
+12,Chile,Región de Antofagasta,Mejillones,Rural,2024,CENSO 2024 - Mapa Chile Rural
+13,Chile,Región de Antofagasta,Sierra Gorda,Rural,2024,CENSO 2024 - Mapa Chile Rural
+14,Chile,Región de Antofagasta,San Pedro de Atacama,Rural,2024,CENSO 2024 - Mapa Chile Rural
+15,Chile,Región de Antofagasta,Taltal,Rural,2024,CENSO 2024 - Mapa Chile Rural
+16,Chile,Región de Atacama,Diego de Almagro,Rural,2024,CENSO 2024 - Mapa Chile Rural
+17,Chile,Región de Atacama,Chañaral,Rural,2024,CENSO 2024 - Mapa Chile Rural
+18,Chile,Región de Atacama,Caldera,Rural,2024,CENSO 2024 - Mapa Chile Rural
+19,Chile,Región de Atacama,Tierra Amarilla,Rural,2024,CENSO 2024 - Mapa Chile Rural
+20,Chile,Región de Atacama,Huasco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+21,Chile,Región de Atacama,Freirina,Rural,2024,CENSO 2024 - Mapa Chile Rural
+22,Chile,Región de Atacama,Alto del Carmen,Rural,2024,CENSO 2024 - Mapa Chile Rural
+23,Chile,Región de Coquimbo,La Higuera,Rural,2024,CENSO 2024 - Mapa Chile Rural
+24,Chile,Región de Coquimbo,Vicuña,Rural,2024,CENSO 2024 - Mapa Chile Rural
+25,Chile,Región de Coquimbo,Paiguano,Rural,2024,CENSO 2024 - Mapa Chile Rural
+26,Chile,Región de Coquimbo,Andacollo,Rural,2024,CENSO 2024 - Mapa Chile Rural
+27,Chile,Región de Coquimbo,Río Hurtado,Rural,2024,CENSO 2024 - Mapa Chile Rural
+28,Chile,Región de Coquimbo,Monte Patria,Rural,2024,CENSO 2024 - Mapa Chile Rural
+29,Chile,Región de Coquimbo,Punitaqui,Rural,2024,CENSO 2024 - Mapa Chile Rural
+30,Chile,Región de Coquimbo,Combarbalá,Rural,2024,CENSO 2024 - Mapa Chile Rural
+31,Chile,Región de Coquimbo,Illapel,Rural,2024,CENSO 2024 - Mapa Chile Rural
+32,Chile,Región de Coquimbo,Canela,Rural,2024,CENSO 2024 - Mapa Chile Rural
+33,Chile,Región de Coquimbo,Salamanca,Rural,2024,CENSO 2024 - Mapa Chile Rural
+34,Chile,Región de Coquimbo,Los Vilos,Rural,2024,CENSO 2024 - Mapa Chile Rural
+35,Chile,Región de Valparaíso,Petorca,Rural,2024,CENSO 2024 - Mapa Chile Rural
+36,Chile,Región de Valparaíso,La Ligua,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+37,Chile,Región de Valparaíso,Cabildo,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+38,Chile,Región de Valparaíso,Putaendo,Rural,2024,CENSO 2024 - Mapa Chile Rural
+39,Chile,Región de Valparaíso,Santa María,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+40,Chile,Región de Valparaíso,San Esteban,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+41,Chile,Región de Valparaíso,Papudo,Rural,2024,CENSO 2024 - Mapa Chile Rural
+42,Chile,Región de Valparaíso,Zapallar,Rural,2024,CENSO 2024 - Mapa Chile Rural
+43,Chile,Región de Valparaíso,Nogales,Rural,2024,CENSO 2024 - Mapa Chile Rural
+44,Chile,Región de Valparaíso,Catemu,Rural,2024,CENSO 2024 - Mapa Chile Rural
+45,Chile,Región de Valparaíso,Panquehue,Rural,2024,CENSO 2024 - Mapa Chile Rural
+46,Chile,Región de Valparaíso,Puchuncaví,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+47,Chile,Región de Valparaíso,Quintero,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+48,Chile,Región de Valparaíso,Concón,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+49,Chile,Región de Valparaíso,La Cruz,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+50,Chile,Región de Valparaíso,Hijuelas,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+51,Chile,Región de Valparaíso,Llay-Llay,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+52,Chile,Región de Valparaíso,Rinconada,Rural,2024,CENSO 2024 - Mapa Chile Rural
+53,Chile,Región de Valparaíso,Calle Larga,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+54,Chile,Región de Valparaíso,Limache,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+55,Chile,Región de Valparaíso,Olmué,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+56,Chile,Región de Valparaíso,Casablanca,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+57,Chile,Región de Valparaíso,Algarrobo,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+58,Chile,Región de Valparaíso,El Quisco,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+59,Chile,Región de Valparaíso,El Tabo,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+60,Chile,Región de Valparaíso,Cartagena,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+61,Chile,Región de Valparaíso,Santo Domingo,Rural,2024,CENSO 2024 - Mapa Chile Rural
+62,Chile,Región de Valparaíso,Isla de Pascua,Rural,2024,CENSO 2024 - Mapa Chile Rural
+63,Chile,Región de Valparaíso,Juan Fernández,Rural,2024,CENSO 2024 - Mapa Chile Rural
+64,Chile,Región Metropolitana de Santiago,Tiltil,Rural,2024,CENSO 2024 - Mapa Chile Rural
+65,Chile,Región Metropolitana de Santiago,Curacaví,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+66,Chile,Región Metropolitana de Santiago,María Pinto,Rural,2024,CENSO 2024 - Mapa Chile Rural
+67,Chile,Región Metropolitana de Santiago,El Monte,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+68,Chile,Región Metropolitana de Santiago,Calera de Tango,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+69,Chile,Región Metropolitana de Santiago,Isla de Maipo,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+70,Chile,Región Metropolitana de Santiago,Pirque,Rural,2024,CENSO 2024 - Mapa Chile Rural
+71,Chile,Región Metropolitana de Santiago,San José de Maipo,Rural,2024,CENSO 2024 - Mapa Chile Rural
+72,Chile,Región Metropolitana de Santiago,Paine,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+73,Chile,Región Metropolitana de Santiago,Alhué,Rural,2024,CENSO 2024 - Mapa Chile Rural
+74,Chile,Región Metropolitana de Santiago,San Pedro,Rural,2024,CENSO 2024 - Mapa Chile Rural
+75,Chile,Región del Libertador General Bernardo O’Higgins,Navidad,Rural,2024,CENSO 2024 - Mapa Chile Rural
+76,Chile,Región del Libertador General Bernardo O’Higgins,Litueche,Rural,2024,CENSO 2024 - Mapa Chile Rural
+77,Chile,Región del Libertador General Bernardo O’Higgins,Las Cabras,Rural,2024,CENSO 2024 - Mapa Chile Rural
+78,Chile,Región del Libertador General Bernardo O’Higgins,La Estrella,Rural,2024,CENSO 2024 - Mapa Chile Rural
+79,Chile,Región del Libertador General Bernardo O’Higgins,Peumo,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+80,Chile,Región del Libertador General Bernardo O’Higgins,Coltauco,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+81,Chile,Región del Libertador General Bernardo O’Higgins,Doñihue,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+82,Chile,Región del Libertador General Bernardo O’Higgins,Graneros,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+83,Chile,Región del Libertador General Bernardo O’Higgins,Mostazal,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+84,Chile,Región del Libertador General Bernardo O’Higgins,Codegua,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+85,Chile,Región del Libertador General Bernardo O’Higgins,Olivar,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+86,Chile,Región del Libertador General Bernardo O’Higgins,Requínoa,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+87,Chile,Región del Libertador General Bernardo O’Higgins,Coinco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+88,Chile,Región del Libertador General Bernardo O’Higgins,Quinta de Tilcoco,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+89,Chile,Región del Libertador General Bernardo O’Higgins,Malloa,Rural,2024,CENSO 2024 - Mapa Chile Rural
+90,Chile,Región del Libertador General Bernardo O’Higgins,San Vicente,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+91,Chile,Región del Libertador General Bernardo O’Higgins,Palmilla,Rural,2024,CENSO 2024 - Mapa Chile Rural
+92,Chile,Región del Libertador General Bernardo O’Higgins,Pichidegua,Rural,2024,CENSO 2024 - Mapa Chile Rural
+93,Chile,Región del Libertador General Bernardo O’Higgins,Peralillo,Rural,2024,CENSO 2024 - Mapa Chile Rural
+94,Chile,Región del Libertador General Bernardo O’Higgins,Marchigüe,Rural,2024,CENSO 2024 - Mapa Chile Rural
+95,Chile,Región del Libertador General Bernardo O’Higgins,Pichilemu,Rural,2024,CENSO 2024 - Mapa Chile Rural
+96,Chile,Región del Libertador General Bernardo O’Higgins,Paredones,Rural,2024,CENSO 2024 - Mapa Chile Rural
+97,Chile,Región del Libertador General Bernardo O’Higgins,Pumanque,Rural,2024,CENSO 2024 - Mapa Chile Rural
+98,Chile,Región del Libertador General Bernardo O’Higgins,Santa Cruz,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+99,Chile,Región del Libertador General Bernardo O’Higgins,Nancagua,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+100,Chile,Región del Libertador General Bernardo O’Higgins,Placilla,Rural,2024,CENSO 2024 - Mapa Chile Rural
+101,Chile,Región del Libertador General Bernardo O’Higgins,Chimbarongo,Rural,2024,CENSO 2024 - Mapa Chile Rural
+102,Chile,Región del Libertador General Bernardo O’Higgins,Chépica,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+103,Chile,Región del Libertador General Bernardo O’Higgins,Lolol,Rural,2024,CENSO 2024 - Mapa Chile Rural
+104,Chile,Región del Maule,Vichuquén,Rural,2024,CENSO 2024 - Mapa Chile Rural
+105,Chile,Región del Maule,Licantén,Rural,2024,CENSO 2024 - Mapa Chile Rural
+106,Chile,Región del Maule,Curepto,Rural,2024,CENSO 2024 - Mapa Chile Rural
+107,Chile,Región del Maule,Hualañé,Rural,2024,CENSO 2024 - Mapa Chile Rural
+108,Chile,Región del Maule,Rauco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+109,Chile,Región del Maule,Teno,Rural,2024,CENSO 2024 - Mapa Chile Rural
+110,Chile,Región del Maule,Romeral,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+111,Chile,Región del Maule,Sagrada Familia,Rural,2024,CENSO 2024 - Mapa Chile Rural
+112,Chile,Región del Maule,Río Claro,Rural,2024,CENSO 2024 - Mapa Chile Rural
+113,Chile,Región del Maule,Molina,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+114,Chile,Región del Maule,Constitución,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+115,Chile,Región del Maule,Pencahue,Rural,2024,CENSO 2024 - Mapa Chile Rural
+116,Chile,Región del Maule,San Rafael,Rural,2024,CENSO 2024 - Mapa Chile Rural
+117,Chile,Región del Maule,Pelarco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+118,Chile,Región del Maule,San Clemente,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+119,Chile,Región del Maule,Colbún,Rural,2024,CENSO 2024 - Mapa Chile Rural
+120,Chile,Región del Maule,Yerbas Buenas,Rural,2024,CENSO 2024 - Mapa Chile Rural
+121,Chile,Región del Maule,Villa Alegre,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+122,Chile,Región del Maule,San Javier,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+123,Chile,Región del Maule,Empedrado,Rural,2024,CENSO 2024 - Mapa Chile Rural
+124,Chile,Región del Maule,Chanco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+125,Chile,Región del Maule,Pelluhue,Rural,2024,CENSO 2024 - Mapa Chile Rural
+126,Chile,Región del Maule,Cauquenes,Rural,2024,CENSO 2024 - Mapa Chile Rural
+127,Chile,Región del Maule,Retiro,Rural,2024,CENSO 2024 - Mapa Chile Rural
+128,Chile,Región del Maule,Longaví,Rural,2024,CENSO 2024 - Mapa Chile Rural
+129,Chile,Región del Maule,Parral,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+130,Chile,Región de Ñuble,Cobquecura,Rural,2024,CENSO 2024 - Mapa Chile Rural
+131,Chile,Región de Ñuble,Quirihue,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+132,Chile,Región de Ñuble,Treguaco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+133,Chile,Región de Ñuble,Coelemu,Rural,2024,CENSO 2024 - Mapa Chile Rural
+134,Chile,Región de Ñuble,Ránquil,Rural,2024,CENSO 2024 - Mapa Chile Rural
+135,Chile,Región de Ñuble,Portezuelo,Rural,2024,CENSO 2024 - Mapa Chile Rural
+136,Chile,Región de Ñuble,Ninhue,Rural,2024,CENSO 2024 - Mapa Chile Rural
+137,Chile,Región de Ñuble,San Nicolás,Rural,2024,CENSO 2024 - Mapa Chile Rural
+138,Chile,Región de Ñuble,San Carlos,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+139,Chile,Región de Ñuble,Ñiquén,Rural,2024,CENSO 2024 - Mapa Chile Rural
+140,Chile,Región de Ñuble,San Fabián,Rural,2024,CENSO 2024 - Mapa Chile Rural
+141,Chile,Región de Ñuble,Coihueco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+142,Chile,Región de Ñuble,Chillán Viejo,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+143,Chile,Región de Ñuble,Quillón,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+144,Chile,Región de Ñuble,Bulnes,Rural,2024,CENSO 2024 - Mapa Chile Rural
+145,Chile,Región de Ñuble,Pemuco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+146,Chile,Región de Ñuble,San Ignacio,Rural,2024,CENSO 2024 - Mapa Chile Rural
+147,Chile,Región de Ñuble,El Carmen,Rural,2024,CENSO 2024 - Mapa Chile Rural
+148,Chile,Región de Ñuble,Pinto,Rural,2024,CENSO 2024 - Mapa Chile Rural
+149,Chile,Región de Ñuble,Yungay,Rural,2024,CENSO 2024 - Mapa Chile Rural
+150,Chile,Región del Biobío,Florida,Rural,2024,CENSO 2024 - Mapa Chile Rural
+151,Chile,Región del Biobío,Penco,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+152,Chile,Región del Biobío,Lota,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+153,Chile,Región del Biobío,Hualqui,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+154,Chile,Región del Biobío,Yumbel,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+155,Chile,Región del Biobío,Cabrero,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+156,Chile,Región del Biobío,Tucapel,Rural,2024,CENSO 2024 - Mapa Chile Rural
+157,Chile,Región del Biobío,Antuco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+158,Chile,Región del Biobío,Quilleco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+159,Chile,Región del Biobío,Laja,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+160,Chile,Región del Biobío,San Rosendo,Rural,2024,CENSO 2024 - Mapa Chile Rural
+161,Chile,Región del Biobío,Santa Juana,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+162,Chile,Región del Biobío,Arauco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+163,Chile,Región del Biobío,Curanilahue,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+164,Chile,Región del Biobío,Nacimiento,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+165,Chile,Región del Biobío,Negrete,Rural,2024,CENSO 2024 - Mapa Chile Rural
+166,Chile,Región del Biobío,Mulchén,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+167,Chile,Región del Biobío,Quilaco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+168,Chile,Región del Biobío,Santa Bárbara,Rural,2024,CENSO 2024 - Mapa Chile Rural
+169,Chile,Región del Biobío,Alto Biobío,Rural,2024,CENSO 2024 - Mapa Chile Rural
+170,Chile,Región del Biobío,Lebu,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+171,Chile,Región del Biobío,Los Álamos,Rural,2024,CENSO 2024 - Mapa Chile Rural
+172,Chile,Región del Biobío,Cañete,Rural,2024,CENSO 2024 - Mapa Chile Rural
+173,Chile,Región del Biobío,Contulmo,Rural,2024,CENSO 2024 - Mapa Chile Rural
+174,Chile,Región del Biobío,Tirúa,Rural,2024,CENSO 2024 - Mapa Chile Rural
+175,Chile,Región de La Araucanía,Renaico,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+176,Chile,Región de La Araucanía,Purén,Rural,2024,CENSO 2024 - Mapa Chile Rural
+177,Chile,Región de La Araucanía,Los Sauces,Rural,2024,CENSO 2024 - Mapa Chile Rural
+178,Chile,Región de La Araucanía,Ercilla,Rural,2024,CENSO 2024 - Mapa Chile Rural
+179,Chile,Región de La Araucanía,Collipulli,Rural,2024,CENSO 2024 - Mapa Chile Rural
+180,Chile,Región de La Araucanía,Lonquimay,Rural,2024,CENSO 2024 - Mapa Chile Rural
+181,Chile,Región de La Araucanía,Curacautín,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+182,Chile,Región de La Araucanía,Lautaro,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+183,Chile,Región de La Araucanía,Victoria,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+184,Chile,Región de La Araucanía,Perquenco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+185,Chile,Región de La Araucanía,Traiguén,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+186,Chile,Región de La Araucanía,Galvarino,Rural,2024,CENSO 2024 - Mapa Chile Rural
+187,Chile,Región de La Araucanía,Lumaco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+188,Chile,Región de La Araucanía,Carahue,Rural,2024,CENSO 2024 - Mapa Chile Rural
+189,Chile,Región de La Araucanía,Saavedra,Rural,2024,CENSO 2024 - Mapa Chile Rural
+190,Chile,Región de La Araucanía,Nueva Imperial,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+191,Chile,Región de La Araucanía,Cholchol,Rural,2024,CENSO 2024 - Mapa Chile Rural
+192,Chile,Región de La Araucanía,Padre Las Casas,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+193,Chile,Región de La Araucanía,Vilcún,Rural,2024,CENSO 2024 - Mapa Chile Rural
+194,Chile,Región de La Araucanía,Melipeuco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+195,Chile,Región de La Araucanía,Teodoro Schmidt,Rural,2024,CENSO 2024 - Mapa Chile Rural
+196,Chile,Región de La Araucanía,Toltén,Rural,2024,CENSO 2024 - Mapa Chile Rural
+197,Chile,Región de La Araucanía,Pitrufquén,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+198,Chile,Región de La Araucanía,Freire,Rural,2024,CENSO 2024 - Mapa Chile Rural
+199,Chile,Región de La Araucanía,Cunco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+200,Chile,Región de La Araucanía,Gorbea,Rural,2024,CENSO 2024 - Mapa Chile Rural
+201,Chile,Región de La Araucanía,Loncoche,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+202,Chile,Región de La Araucanía,Villarrica,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+203,Chile,Región de La Araucanía,Pucón,Rural,2024,CENSO 2024 - Mapa Chile Rural
+204,Chile,Región de La Araucanía,Curarrehue,Rural,2024,CENSO 2024 - Mapa Chile Rural
+205,Chile,Región de Los Ríos,Mariquina,Rural,2024,CENSO 2024 - Mapa Chile Rural
+206,Chile,Región de Los Ríos,Máfil,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+207,Chile,Región de Los Ríos,Lanco,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+208,Chile,Región de Los Ríos,Panguipulli,Rural,2024,CENSO 2024 - Mapa Chile Rural
+209,Chile,Región de Los Ríos,Los Lagos,Rural,2024,CENSO 2024 - Mapa Chile Rural
+210,Chile,Región de Los Ríos,Corral,Rural,2024,CENSO 2024 - Mapa Chile Rural
+211,Chile,Región de Los Ríos,La Unión,Rural,2024,CENSO 2024 - Mapa Chile Rural
+212,Chile,Región de Los Ríos,Paillaco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+213,Chile,Región de Los Ríos,Futrono,Rural,2024,CENSO 2024 - Mapa Chile Rural
+214,Chile,Región de Los Ríos,Lago Ranco,Rural,2024,CENSO 2024 - Mapa Chile Rural
+215,Chile,Región de Los Ríos,Río Bueno,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+216,Chile,Región de Los Lagos,San Pablo,Rural,2024,CENSO 2024 - Mapa Chile Rural
+217,Chile,Región de Los Lagos,San Juan de la Costa,Rural,2024,CENSO 2024 - Mapa Chile Rural
+218,Chile,Región de Los Lagos,Puyehue,Rural,2024,CENSO 2024 - Mapa Chile Rural
+219,Chile,Región de Los Lagos,Puerto Octay,Rural,2024,CENSO 2024 - Mapa Chile Rural
+220,Chile,Región de Los Lagos,Río Negro,Rural,2024,CENSO 2024 - Mapa Chile Rural
+221,Chile,Región de Los Lagos,Purranque,Rural,2024,CENSO 2024 - Mapa Chile Rural
+222,Chile,Región de Los Lagos,Fresia,Rural,2024,CENSO 2024 - Mapa Chile Rural
+223,Chile,Región de Los Lagos,Frutillar,Rural,2024,CENSO 2024 - Mapa Chile Rural
+224,Chile,Región de Los Lagos,Puerto Varas,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+225,Chile,Región de Los Lagos,Llanquihue,Rural,2024,CENSO 2024 - Mapa Chile Rural
+226,Chile,Región de Los Lagos,Los Muermos,Rural,2024,CENSO 2024 - Mapa Chile Rural
+227,Chile,Región de Los Lagos,Maullín,Rural,2024,CENSO 2024 - Mapa Chile Rural
+228,Chile,Región de Los Lagos,Calbuco,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+229,Chile,Región de Los Lagos,Cochamó,Rural,2024,CENSO 2024 - Mapa Chile Rural
+230,Chile,Región de Los Lagos,Ancud,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+231,Chile,Región de Los Lagos,Quemchi,Rural,2024,CENSO 2024 - Mapa Chile Rural
+232,Chile,Región de Los Lagos,Hualaihué,Rural,2024,CENSO 2024 - Mapa Chile Rural
+233,Chile,Región de Los Lagos,Dalcahue,Rural,2024,CENSO 2024 - Mapa Chile Rural
+234,Chile,Región de Los Lagos,Castro,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+235,Chile,Región de Los Lagos,Curaco de Vélez,Rural,2024,CENSO 2024 - Mapa Chile Rural
+236,Chile,Región de Los Lagos,Quinchao,Rural,2024,CENSO 2024 - Mapa Chile Rural
+237,Chile,Región de Los Lagos,Puqueldón,Rural,2024,CENSO 2024 - Mapa Chile Rural
+238,Chile,Región de Los Lagos,Chonchi,Rural,2024,CENSO 2024 - Mapa Chile Rural
+239,Chile,Región de Los Lagos,Queilén,Rural,2024,CENSO 2024 - Mapa Chile Rural
+240,Chile,Región de Los Lagos,Quellón,Mixta,2024,CENSO 2024 - Mapa Chile Rural
+241,Chile,Región de Los Lagos,Chaitén,Rural,2024,CENSO 2024 - Mapa Chile Rural
+242,Chile,Región de Los Lagos,Futaleufú,Rural,2024,CENSO 2024 - Mapa Chile Rural
+243,Chile,Región de Los Lagos,Palena,Rural,2024,CENSO 2024 - Mapa Chile Rural
+244,Chile,Región de Aysén del General Carlos Ibáñez del Campo,Guaitecas,Rural,2024,CENSO 2024 - Mapa Chile Rural
+245,Chile,Región de Aysén del General Carlos Ibáñez del Campo,Cisnes,Rural,2024,CENSO 2024 - Mapa Chile Rural
+246,Chile,Región de Aysén del General Carlos Ibáñez del Campo,Lago Verde,Rural,2024,CENSO 2024 - Mapa Chile Rural
+247,Chile,Región de Aysén del General Carlos Ibáñez del Campo,Aysén,Rural,2024,CENSO 2024 - Mapa Chile Rural
+248,Chile,Región de Aysén del General Carlos Ibáñez del Campo,Río Ibáñez,Rural,2024,CENSO 2024 - Mapa Chile Rural
+249,Chile,Región de Aysén del General Carlos Ibáñez del Campo,Chile Chico,Rural,2024,CENSO 2024 - Mapa Chile Rural
+250,Chile,Región de Aysén del General Carlos Ibáñez del Campo,Cochrane,Rural,2024,CENSO 2024 - Mapa Chile Rural
+251,Chile,Región de Aysén del General Carlos Ibáñez del Campo,Tortel,Rural,2024,CENSO 2024 - Mapa Chile Rural
+252,Chile,Región de Aysén del General Carlos Ibáñez del Campo,O’Higgins,Rural,2024,CENSO 2024 - Mapa Chile Rural
+253,Chile,Región de Magallanes y de la Antártica Chilena,Natales,Rural,2024,CENSO 2024 - Mapa Chile Rural
+254,Chile,Región de Magallanes y de la Antártica Chilena,Torres del Paine,Rural,2024,CENSO 2024 - Mapa Chile Rural
+255,Chile,Región de Magallanes y de la Antártica Chilena,Laguna Blanca,Rural,2024,CENSO 2024 - Mapa Chile Rural
+256,Chile,Región de Magallanes y de la Antártica Chilena,San Gregorio,Rural,2024,CENSO 2024 - Mapa Chile Rural
+257,Chile,Región de Magallanes y de la Antártica Chilena,Primavera,Rural,2024,CENSO 2024 - Mapa Chile Rural
+258,Chile,Región de Magallanes y de la Antártica Chilena,Río Verde,Rural,2024,CENSO 2024 - Mapa Chile Rural
+259,Chile,Región de Magallanes y de la Antártica Chilena,Porvenir,Rural,2024,CENSO 2024 - Mapa Chile Rural
+260,Chile,Región de Magallanes y de la Antártica Chilena,Timaukel,Rural,2024,CENSO 2024 - Mapa Chile Rural
+261,Chile,Región de Magallanes y de la Antártica Chilena,Cabo de Hornos,Rural,2024,CENSO 2024 - Mapa Chile Rural
