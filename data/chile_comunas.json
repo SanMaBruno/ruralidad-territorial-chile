@@ -8,6 +8,9 @@
       "Putre"
     ],
     "comunas_mixtas": [],
+    "comunas_urbanas": [
+      "Arica"
+    ],
     "n_rural": 3,
     "n_mixta": 0,
     "n_total": 4,
@@ -26,6 +29,10 @@
       "Pozo Almonte"
     ],
     "comunas_mixtas": [],
+    "comunas_urbanas": [
+      "Alto Hospicio",
+      "Iquique"
+    ],
     "n_rural": 5,
     "n_mixta": 0,
     "n_total": 7,
@@ -46,6 +53,10 @@
       "Tocopilla"
     ],
     "comunas_mixtas": [],
+    "comunas_urbanas": [
+      "Antofagasta",
+      "Calama"
+    ],
     "n_rural": 7,
     "n_mixta": 0,
     "n_total": 9,
@@ -66,6 +77,10 @@
       "Tierra Amarilla"
     ],
     "comunas_mixtas": [],
+    "comunas_urbanas": [
+      "Copiapó",
+      "Vallenar"
+    ],
     "n_rural": 7,
     "n_mixta": 0,
     "n_total": 9,
@@ -91,6 +106,11 @@
       "Vicuña"
     ],
     "comunas_mixtas": [],
+    "comunas_urbanas": [
+      "Coquimbo",
+      "La Serena",
+      "Ovalle"
+    ],
     "n_rural": 12,
     "n_mixta": 0,
     "n_total": 15,
@@ -134,6 +154,17 @@
       "San Esteban",
       "Santa María"
     ],
+    "comunas_urbanas": [
+      "La Calera",
+      "Los Andes",
+      "Quillota",
+      "Quilpué",
+      "San Antonio",
+      "San Felipe",
+      "Valparaíso",
+      "Villa Alemana",
+      "Viña del Mar"
+    ],
     "n_rural": 11,
     "n_mixta": 18,
     "n_total": 38,
@@ -158,6 +189,49 @@
       "El Monte",
       "Isla de Maipo",
       "Paine"
+    ],
+    "comunas_urbanas": [
+      "Buin",
+      "Cerrillos",
+      "Cerro Navia",
+      "Colina",
+      "Conchalí",
+      "El Bosque",
+      "Estación Central",
+      "Huechuraba",
+      "Independencia",
+      "La Cisterna",
+      "La Florida",
+      "La Granja",
+      "La Pintana",
+      "La Reina",
+      "Lampa",
+      "Las Condes",
+      "Lo Barnechea",
+      "Lo Espejo",
+      "Lo Prado",
+      "Macul",
+      "Maipú",
+      "Melipilla",
+      "Padre Hurtado",
+      "Pedro Aguirre Cerda",
+      "Peñaflor",
+      "Peñalolén",
+      "Providencia",
+      "Pudahuel",
+      "Puente Alto",
+      "Quilicura",
+      "Quinta Normal",
+      "Recoleta",
+      "Renca",
+      "San Bernardo",
+      "San Joaquín",
+      "San Miguel",
+      "San Ramón",
+      "Santiago",
+      "Talagante",
+      "Vitacura",
+      "Ñuñoa"
     ],
     "n_rural": 6,
     "n_mixta": 5,
@@ -202,6 +276,12 @@
       "San Vicente",
       "Santa Cruz"
     ],
+    "comunas_urbanas": [
+      "Machalí",
+      "Rancagua",
+      "Rengo",
+      "San Fernando"
+    ],
     "n_rural": 16,
     "n_mixta": 13,
     "n_total": 33,
@@ -242,6 +322,12 @@
       "San Javier",
       "Villa Alegre"
     ],
+    "comunas_urbanas": [
+      "Curicó",
+      "Linares",
+      "Maule",
+      "Talca"
+    ],
     "n_rural": 19,
     "n_mixta": 7,
     "n_total": 30,
@@ -275,6 +361,9 @@
       "Quillón",
       "Quirihue",
       "San Carlos"
+    ],
+    "comunas_urbanas": [
+      "Chillán"
     ],
     "n_rural": 16,
     "n_mixta": 4,
@@ -314,6 +403,16 @@
       "Penco",
       "Santa Juana",
       "Yumbel"
+    ],
+    "comunas_urbanas": [
+      "Chiguayante",
+      "Concepción",
+      "Coronel",
+      "Hualpén",
+      "Los Ángeles",
+      "San Pedro de la Paz",
+      "Talcahuano",
+      "Tomé"
     ],
     "n_rural": 14,
     "n_mixta": 11,
@@ -359,6 +458,10 @@
       "Victoria",
       "Villarrica"
     ],
+    "comunas_urbanas": [
+      "Angol",
+      "Temuco"
+    ],
     "n_rural": 20,
     "n_mixta": 10,
     "n_total": 32,
@@ -383,6 +486,9 @@
       "Lanco",
       "Máfil",
       "Río Bueno"
+    ],
+    "comunas_urbanas": [
+      "Valdivia"
     ],
     "n_rural": 8,
     "n_mixta": 3,
@@ -426,6 +532,10 @@
       "Puerto Varas",
       "Quellón"
     ],
+    "comunas_urbanas": [
+      "Osorno",
+      "Puerto Montt"
+    ],
     "n_rural": 23,
     "n_mixta": 5,
     "n_total": 30,
@@ -448,6 +558,9 @@
       "Tortel"
     ],
     "comunas_mixtas": [],
+    "comunas_urbanas": [
+      "Coyhaique"
+    ],
     "n_rural": 9,
     "n_mixta": 0,
     "n_total": 10,
@@ -470,6 +583,10 @@
       "Torres del Paine"
     ],
     "comunas_mixtas": [],
+    "comunas_urbanas": [
+      "Antártica",
+      "Punta Arenas"
+    ],
     "n_rural": 9,
     "n_mixta": 0,
     "n_total": 11,

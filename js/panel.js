@@ -29,7 +29,7 @@ export function closePanel() {
 export function openPanel(regionData) {
   if (!panelEl || !regionData) return;
 
-  const { name, comunas_rurales, comunas_mixtas = [], n_rural, n_mixta = 0, n_total, n_urban, pct_rural } = regionData;
+  const { name, comunas_rurales, comunas_mixtas = [], comunas_urbanas = [], n_rural, n_mixta = 0, n_total, n_urban, pct_rural } = regionData;
   const pctUrban = (100 * n_urban / n_total).toFixed(1);
   const pctMixta = (100 * n_mixta / n_total).toFixed(1);
   const color = colorScale(pct_rural);
@@ -71,11 +71,18 @@ export function openPanel(regionData) {
     list.appendChild(li);
   });
 
-  // Urban footer
-  document.getElementById("panel-urban-note").textContent =
-    n_urban > 0
-      ? `+ ${n_urban} comuna${n_urban > 1 ? "s" : ""} urbana${n_urban > 1 ? "s" : ""}`
-      : "Todas las comunas son rurales o mixtas";
+  // Urban communes
+  comunas_urbanas.forEach((comuna, i) => {
+    const li = document.createElement("li");
+    li.className = "comuna-item";
+    li.style.animationDelay = `${(n_rural + n_mixta + i) * 25}ms`;
+    li.innerHTML = `<span class="comuna-dot" style="background:#c8c3b8"></span>${comuna} <span class="comuna-tag urbana">urbana</span>`;
+    list.appendChild(li);
+  });
+
+  // Urban footer (hidden when all are listed)
+  const urbanNote = document.getElementById("panel-urban-note");
+  urbanNote.textContent = "";
 
   // Open
   panelEl.classList.add("open");
