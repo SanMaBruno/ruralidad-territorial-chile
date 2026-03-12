@@ -4,6 +4,8 @@ Visualización interactiva que clasifica las **346 comunas** de Chile en tres ca
 
 ## Vista previa
 
+![Vista previa de la visualización](assets/preview.png)
+
 El mapa coroplético muestra cada región coloreada según su porcentaje de ruralidad. Al hacer clic en una región se despliega un panel con el detalle completo de sus comunas.
 
 - **185** comunas rurales
